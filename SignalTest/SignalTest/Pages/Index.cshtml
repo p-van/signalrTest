@@ -1,0 +1,23 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<h1>Hello Signalr</h1>
+<h2 id="connectionStatus"></h2>
+
+<div>
+    <textarea id="msgComposeBox"></textarea>
+    <button id="msgSend">Send</button>
+</div>
+
+<div id="msgDisplay">
+    
+</div>
+
+
+@section Scripts
+{
+    <script src="~/js/app.js" asp-append-version="true"></script>
+}
